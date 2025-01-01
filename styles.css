@@ -151,3 +151,57 @@ section {
   font-size: 1.8rem;
   line-height: 1.8;
 }
+
+
+/* menu */
+
+.menu .card-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 5rem;
+}
+
+.menu .card-container .card{
+    text-align: center;
+    padding: 5rem;
+    border: var(--border);
+    background-color: var(--color-black);
+}
+
+.menu .card-container .card img{
+    width: 10rem;
+
+}
+
+.menu .card-container .card h3{
+    font-size: 2.5em;
+    margin: 1rem 0;
+    color:var(--color-white);
+}
+.menu .card-container .card p{
+    font-size: 1.4em;
+    color: var(--color-white);
+    margin: 1rem 0;
+}
+
+.menu .card-container .card .price{
+    font-size: 2.5em;
+    color: var(--color-white);
+    padding: 0.5rem 0;
+   
+}
+
+.menu .card-container .card span{
+    font-size: 1.5rem;
+    font-weight: lighter;
+    text-decoration: line-through;
+}
+
+.menu .card-container .card:hover{
+
+    background-color: var(--color-white);
+    
+}
+.menu .card-container .card:hover>*{
+    color: var(--color-black);
+}
