@@ -155,7 +155,7 @@ section {
 
 /* menu */
 
-.menu .card-container{
+.card-container{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     gap: 5rem;
@@ -178,7 +178,7 @@ section {
     margin: 1rem 0;
     color:var(--color-white);
 }
-.menu .card-container .card p{
+.card-container .card p{
     font-size: 1.4em;
     color: var(--color-white);
     margin: 1rem 0;
@@ -205,3 +205,35 @@ section {
 .menu .card-container .card:hover>*{
     color: var(--color-black);
 }
+
+/* review*/
+
+.review .card-container .card{
+    text-align: center;
+    border: var(--border);
+    padding: 2rem 3rem;
+    
+}
+
+.review .card-container .card p{
+    margin: 2rem 0;
+    font-weight: lighter;
+    font-size: 1.6rem;
+    line-height: 1.8;
+}
+
+
+.review .card-container .card h3{
+    font-size: 1.8rem;
+    color: var(--color-white);
+    margin: 2rem 0;
+   
+}
+
+.review .card-container .card .img-user{
+    width: 7rem;
+    height: 7rem;
+    border-radius: 50%;
+    
+}
+
