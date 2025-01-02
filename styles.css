@@ -224,7 +224,7 @@ section {
 
 
 .review .card-container .card h3{
-    font-size: 1.8rem;
+    font-size: 2rem;
     color: var(--color-white);
     margin: 2rem 0;
    
@@ -237,3 +237,12 @@ section {
     
 }
 
+/* address*/
+
+ .box-map{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
