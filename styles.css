@@ -253,3 +253,30 @@ section {
 .share img:hover {
   background-color: var(--color-main);
 }
+
+/* media queries */
+
+@media (max-width: 554px) {
+  .navbar a {
+    display: none;
+  }
+
+  .home-container {
+    text-align: center;
+
+  }
+
+  .content h3 {
+    font-size: 3rem;
+  }
+  .content p {
+    margin: 1rem 0;
+  }
+
+  .about .row {
+    flex-direction: column;
+  }
+  .about .container-img {
+    display: none;
+  }
+}
