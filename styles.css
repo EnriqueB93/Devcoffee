@@ -1,0 +1,282 @@
+:root {
+  --color-white: #fff;
+  --color-black: #13131a;
+  --bg: #010103;
+  --color-main: #d3ad7f;
+  font-size: 10px;
+  --border: 0.1rem solid rgba(255, 255, 255, 0.3);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  font-family: "Roboto", sans-serif;
+  text-decoration: none;
+  transition: 0.2s linear;
+  text-transform: capitalize;
+}
+
+/* config General*/
+
+body {
+  background-color: var(--bg);
+}
+
+section {
+  padding: 3rem 2rem;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+/* header*/
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  border-bottom: var(--border);
+  z-index: 99;
+  background-color: var(--bg);
+}
+
+.header section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+.navbar a {
+  margin: 0 1rem;
+  font-size: 1.8rem;
+  color: var(--color-white);
+}
+
+.navbar a:hover {
+  color: var(--color-main);
+  border-bottom: 0.1rem solid var(--color-main);
+  font-size: 2rem;
+}
+
+.icons img {
+  margin: 1rem;
+  cursor: pointer;
+}
+
+.icons img:hover {
+  transform: scale(1.3);
+}
+
+/* Home */
+
+.home-container {
+  background-image: url("./assets/home-img.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.home-container section {
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.content {
+  max-width: 60rem;
+}
+
+.content h3 {
+  font-size: 6rem;
+  color: var(--color-white);
+}
+
+.content p {
+  font-size: 2rem;
+  font-weight: 100;
+  line-height: 1.8;
+  color: var(--color-white);
+}
+
+.btn {
+  padding: 1rem 3rem;
+  color: var(--color-white);
+  background-color: var(--color-main);
+  cursor: pointer;
+  margin-top: 1rem;
+  font-size: 1.7rem;
+  display: inline-block;
+}
+
+.btn:hover {
+  letter-spacing: 0.2rem;
+}
+
+/* about*/
+
+.title {
+  font-size: 4rem;
+  text-align: center;
+  color: var(--color-main);
+  text-transform: uppercase;
+  margin: 4rem;
+}
+
+.title span {
+  color: var(--color-white);
+  text-transform: uppercase;
+}
+
+.about .row {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background-color: var(--color-black);
+}
+
+.about .row .content {
+  padding: 2rem;
+}
+
+.about .row .content h3 {
+  font-size: 3rem;
+  color: var(--color-white);
+}
+
+.about .row .content p {
+  padding: 1rem 0;
+  font-size: 1.8rem;
+  line-height: 1.8;
+}
+
+/* menu */
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 5rem;
+}
+
+.menu .card-container .card {
+  text-align: center;
+  padding: 5rem;
+  border: var(--border);
+  background-color: var(--color-black);
+}
+
+.menu .card-container .card img {
+  width: 10rem;
+}
+
+.menu .card-container .card h3 {
+  font-size: 2.5em;
+  margin: 1rem 0;
+  color: var(--color-white);
+}
+.card-container .card p {
+  font-size: 1.4em;
+  color: var(--color-white);
+  margin: 1rem 0;
+}
+
+.menu .card-container .card .price {
+  font-size: 2.5em;
+  color: var(--color-white);
+  padding: 0.5rem 0;
+}
+
+.menu .card-container .card span {
+  font-size: 1.5rem;
+  font-weight: lighter;
+  text-decoration: line-through;
+}
+
+.menu .card-container .card:hover {
+  background-color: var(--color-white);
+}
+.menu .card-container .card:hover > * {
+  color: var(--color-black);
+}
+
+/* review*/
+
+.review .card-container .card {
+  text-align: center;
+  border: var(--border);
+  padding: 2rem 3rem;
+}
+
+.review .card-container .card p {
+  margin: 2rem 0;
+  font-weight: lighter;
+  font-size: 1.6rem;
+  line-height: 1.8;
+}
+
+.review .card-container .card h3 {
+  font-size: 2rem;
+  color: var(--color-white);
+  margin: 2rem 0;
+}
+
+.review .card-container .card .img-user {
+  width: 7rem;
+  height: 7rem;
+  border-radius: 50%;
+}
+
+/* address*/
+
+.box-map {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* footer*/
+
+.share {
+  text-align: center;
+  padding: 1rem;
+}
+
+.share img {
+  margin: 0.3rem;
+  padding: 1rem;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.share img:hover {
+  background-color: var(--color-main);
+}
+
+/* media queries */
+
+@media (max-width: 554px) {
+  .navbar a {
+    display: none;
+  }
+
+  .home-container {
+    text-align: center;
+
+  }
+
+  .content h3 {
+    font-size: 3rem;
+  }
+  .content p {
+    margin: 1rem 0;
+  }
+
+  .about .row {
+    flex-direction: column;
+  }
+  .about .container-img {
+    display: none;
+  }
+}
